@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F4E9DA;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 7%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #F4E9DA;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  border-bottom: none;
+}
+
+nav img {
+  width: 20%;
+  margin: 10px 0;
+  margin-right: 2em;
+}
+
+nav ul {
+  display: flex;
+  flex: 1; /* Allows the ul to use the remaining horizontal space */
+  justify-content: flex-start; /* Align links towards the left */
+  gap: 2em; /* Increase gap between the buttons */
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a.active {
+  color: #c08507;
+}
+
+nav .social-media {
+  display: flex;
+  gap: 0.5em;
+  margin-left: 5em; /* Push social media icons to the far right */
+}
+
+nav .social-media a img {
+  width: 24px;
+  height: 24px;
+}
+
+.main-container {
+  margin-top: 100px; /* Offset for fixed nav */
+  padding: 3em 2em 100px; /* Top, sides, and bottom padding */
+  width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+main article.Specialty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 120px;
+  margin-bottom: .5em;
+  width: 100%;
+  padding: 1.5em;
+  border-radius: 8px;
+  color: #000; /* Changed from #fff to #000 (black) */
+  box-sizing: border-box;
+}
+
+main article.Specialty .text {
+  width: 100%;
+  text-align: center; /* Center the title and description */
+  padding: 1em;
+  border-radius: 8px;
+  color: #000;
+}
+
+main article.Specialty .text h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+main article.Specialty .text p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Two columns for the menu items */
+main article.Specialty .menu-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: .5em; /* Space between columns and items */
+  width: 90%;
+}
+
+main article.Specialty .menu-columns .item {
+  background: rgba(255, 255, 255, 0.1); /* Subtle overlay to distinguish items */
+  padding: 1em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+main article.Specialty .menu-columns .item h2 {
+  margin-bottom: 0.5em; /* Increased spacing below the heading */
+  font-size: 2em; /* Increased font size so drink names stand out more */
+  color: #000;
+}
+
+main article.Specialty .menu-columns .item p {
+  font-size: 1.1em; /* Slightly larger text for paragraphs */
+  line-height: 1.6; /* More space between lines for readability */
+  color: #000;
+  margin: 0.5em 0; /* Add vertical spacing between multiple paragraphs */
+}
+
+main article.Coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 100px;
+  margin-bottom: .5em;
+  width: 100%;
+  padding: 1.5em;
+  border-radius: 8px;
+  color: #000; /* Changed from #fff to #000 (black) */
+  box-sizing: border-box;
+}
+
+main article.Coffee .text {
+  width: 100%;
+  text-align: center; /* Center the title and description */
+  padding: 1em;
+  border-radius: 8px;
+  color: #000;
+}
+
+main article.Coffee .text h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+main article.Coffee .text p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Two columns for the menu items */
+main article.Coffee .menu-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: .5em; /* Space between columns and items */
+  width: 90%;
+}
+
+main article.Coffee .menu-columns .item {
+  background: rgba(255, 255, 255, 0.1); /* Subtle overlay to distinguish items */
+  padding: 1em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+main article.Coffee .menu-columns .item h2 {
+  margin-bottom: 0.5em; /* Increased spacing below the heading */
+  font-size: 2em; /* Increased font size so drink names stand out more */
+  color: #000;
+}
+
+main article.Coffee .menu-columns .item p {
+  font-size: 1.1em; /* Slightly larger text for paragraphs */
+  line-height: 1.6; /* More space between lines for readability */
+  color: #000;
+  margin: 0.5em 0; /* Add vertical spacing between multiple paragraphs */
+}
+
+main article.Espresso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 100px;
+  margin-bottom: .5em;
+  width: 100%;
+  padding: 1.5em;
+  border-radius: 8px;
+  color: #000; /* Changed from #fff to #000 (black) */
+  box-sizing: border-box;
+}
+
+main article.Espresso .text {
+  width: 100%;
+  text-align: center; /* Center the title and description */
+  padding: 1em;
+  border-radius: 8px;
+  color: #000;
+}
+
+main article.Espresso .text h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+main article.Espresso .text p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Two columns for the menu items */
+main article.Espresso .menu-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: .5em; /* Space between columns and items */
+  width: 90%;
+}
+
+main article.Espresso .menu-columns .item {
+  background: rgba(255, 255, 255, 0.1); /* Subtle overlay to distinguish items */
+  padding: 1em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+main article.Espresso .menu-columns .item h2 {
+  margin-bottom: 0.5em; /* Increased spacing below the heading */
+  font-size: 2em; /* Increased font size so drink names stand out more */
+  color: #000;
+}
+
+main article.Espresso .menu-columns .item p {
+  font-size: 1.1em; /* Slightly larger text for paragraphs */
+  line-height: 1.6; /* More space between lines for readability */
+  color: #000;
+  margin: 0.5em 0; /* Add vertical spacing between multiple paragraphs */
+}
+
+main article.Tea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 100px;
+  margin-bottom: .5em;
+  width: 100%;
+  padding: 1.5em;
+  border-radius: 8px;
+  color: #000; /* Changed from #fff to #000 (black) */
+  box-sizing: border-box;
+}
+
+main article.Tea .text {
+  width: 100%;
+  text-align: center; /* Center the title and description */
+  padding: 1em;
+  border-radius: 8px;
+  color: #000;
+}
+
+main article.Tea .text h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+main article.Tea .text p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Two columns for the menu items */
+main article.Tea .menu-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: .5em; /* Space between columns and items */
+  width: 90%;
+}
+
+main article.Tea .menu-columns .item {
+  background: rgba(255, 255, 255, 0.1); /* Subtle overlay to distinguish items */
+  padding: 1em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+main article.Tea .menu-columns .item h2 {
+  margin-bottom: 0.5em; /* Increased spacing below the heading */
+  font-size: 2em; /* Increased font size so drink names stand out more */
+  color: #000;
+}
+
+main article.Tea .menu-columns .item p {
+  font-size: 1.1em; /* Slightly larger text for paragraphs */
+  line-height: 1.6; /* More space between lines for readability */
+  color: #000;
+  margin: 0.5em 0; /* Add vertical spacing between multiple paragraphs */
+}
+
+main article.Pastries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 100px;
+  margin-bottom: 10em;
+  width: 100%;
+  padding: 1.5em;
+  border-radius: 8px;
+  color: #000; /* Changed from #fff to #000 (black) */
+  box-sizing: border-box;
+}
+
+main article.Pastries .text {
+  width: 100%;
+  text-align: center; /* Center the title and description */
+  padding: 1em;
+  border-radius: 8px;
+  color: #000;
+}
+
+main article.Pastries .text h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+main article.Pastries .text p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Two columns for the menu items */
+main article.Pastries .menu-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: .5em; /* Space between columns and items */
+  width: 90%;
+}
+
+main article.Pastries .menu-columns .item {
+  background: rgba(255, 255, 255, 0.1); /* Subtle overlay to distinguish items */
+  padding: 1em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+main article.Pastries .menu-columns .item h2 {
+  margin-bottom: 0.5em; /* Increased spacing below the heading */
+  font-size: 2em; /* Increased font size so drink names stand out more */
+  color: #000;
+}
+
+main article.Pastries .menu-columns .item p {
+  font-size: 1.1em; /* Slightly larger text for paragraphs */
+  line-height: 1.6; /* More space between lines for readability */
+  color: #000;
+  margin: 0.5em 0; /* Add vertical spacing between multiple paragraphs */
+}
+
+main article.Food {
+  width: 100%;
+  background-color: #c08507;
+  padding: 1.5em;
+  border-radius: 8px;
+  color: #fff;
+  box-sizing: border-box;
+  margin-top: 200px;
+  margin-bottom: 2em;
+}
+
+/* Create a horizontal layout of three columns */
+.Food .info-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the group horizontally */
+  align-items: flex-start; /* Align columns at the top */
+  gap: 2em; /* Space between columns */
+}
+
+/* Contact and Hours columns take up less space */
+.contact-column, .hours-column {
+  flex: 1;
+  max-width: 200px; /* Adjust as needed */
+  text-align: left;
+  color: #000; /* Black text for contrast */
+}
+
+/* Slideshow remains in the center, can be wider */
+.cycle-slideshow {
+  flex: 2; /* Give slideshow more space */
+  max-width: 600px; /* Control the slideshow width */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cycle-slideshow img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Headings and paragraphs styling */
+.contact-column h2, .hours-column h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.contact-column p, .hours-column p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0.5em 0;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  color: #fff;
+  background: #ca7403;
+  padding: 3px;
+  text-align: center;
+}
+
+/* Tablet Media Query */
+@media (max-width: 1024px) {
+  /* Slightly reduce font sizes and spacing for tablet */
+  main article.Specialty .text h1,
+  main article.Coffee .text h1,
+  main article.Espresso .text h1,
+  main article.Tea .text h1,
+  main article.Pastries .text h1 {
+    font-size: 3em;
+  }
+
+  .menu-columns .item h2 {
+    font-size: 1.8em;
+  }
+
+  .menu-columns .item p {
+    font-size: 1em;
+  }
+
+  /* Reduce gap in the features grid */
+  .menu-columns {
+    gap: 0.3em;
+  }
+}
+
+/* Mobile Media Query */
+@media (max-width: 768px) {
+  /* Switch menu columns to single column for easier scrolling */
+  .menu-columns {
+    grid-template-columns: 1fr; 
+  }
+
+  /* Reduce font sizes further for mobile */
+  main article.Specialty .text h1,
+  main article.Coffee .text h1,
+  main article.Espresso .text h1,
+  main article.Tea .text h1,
+  main article.Pastries .text h1 {
+    font-size: 2.5em;
+  }
+
+  .menu-columns .item h2 {
+    font-size: 1.6em;
+  }
+
+  .menu-columns .item p {
+    font-size: 1em;
+  }
+
+  /* For the Food section, stack all columns vertically on mobile */
+  .Food .info-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-column,
+  .hours-column {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .cycle-slideshow {
+    max-width: 100%;
+  }
+}

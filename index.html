@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Final_Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+ <nav>
+  <a href="#"><img src="images/coffee_shop_logo_2.png" alt="coffee_shop_logo_2"></a>
+  <ul>
+    <li><a href="index.html" class="active">home</a></li>
+    <li><a href="menu.html">menu</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="shop.html">shop</a></li>
+    <li><a href="contact.html">contact</a></li>
+  </ul>
+  <div class="social-media">
+    <a href="#" target="_blank"><img src="images/yelp.png" alt="yelp"></a>
+    <a href="#" target="_blank"><img src="images/insta-logo.png" alt="instagram"></a>
+    <a href="#" target="_blank"><img src="images/fb_logo.png" alt="facebook"></a>
+    <a href="#" target="_blank"><img src="images/tiktok_logo_2.png" alt="tiktok"></a>
+    <a href="#" target="_blank"><img src="images/email.png" alt="email"></a>
+  </div>
+</nav>
+
+
+  <div class="main-container">
+    <main>
+      <article class="Story">
+        <div class="text">
+          <h1>story</h1>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+        <div class="cycle-slideshow">
+          <img src="images/coffee_story.jpg">
+          <img src="images/coffee_story_overhead.jpg">
+          <img src="images/coffee_story_wide_shot.jpg.jpg">
+        </div>
+      </article>
+
+    <div class="features-grid">
+      <article class="Coffee">
+        <div class="imageGroup"><div><img src="images/coffee_with_beans_istockphoto.jpg"></div>
+        <div class="text">  
+          <h1>coffee</h1>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+      </article> 
+
+      <article class="Pastries">
+        <div class="imageGroup"><div><img src="images/pastries.jpg"></div>
+        <div class="text">  
+          <h1>pastries</h1>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+      </article> 
+    
+      <article class="Specialty">
+        <div class="imageGroup"><div><img src="images/ube_latte.jpg"></div>
+        <div class="text">  
+          <h1>specialty</h1>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+      </article>
+    </div>
+
+      <article class="Vibe">
+        <div class="text">
+          <h1>vibe</h1>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+        <div class="cycle-slideshow">
+          <img src="images/social_coffee.jpg">
+          <img src="images/vibes_laptop_hangout.jpg">
+          <img src="images/vibes_patio.jpg">
+          <img src="images/vibe_cheers.jpg">
+       </article>
+
+    </main>
+  </div>
+  <footer>
+    <p>&copy; Copyright Information
+      <p>
+  </footer>
+</body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+
+<script>
+  const nav = document.querySelector('nav');
+  nav.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>

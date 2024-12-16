@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F4E9DA;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 7%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #F4E9DA;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  border-bottom: none;
+}
+
+nav img {
+  width: 20%;
+  margin: 10px 0;
+  margin-right: 2em;
+}
+
+nav ul {
+  display: flex;
+  flex: 1; /* Allows the ul to use the remaining horizontal space */
+  justify-content: flex-start; /* Align links towards the left */
+  gap: 2em; /* Increase gap between the buttons */
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a.active {
+  color: #c08507;
+}
+
+nav .social-media {
+  display: flex;
+  gap: 0.5em;
+  margin-left: 5em; /* Push social media icons to the far right */
+}
+
+nav .social-media a img {
+  width: 24px;
+  height: 24px;
+}
+
+.main-container {
+  margin-top: 100px; /* Offset for fixed nav */
+  padding: 3em 2em 100px; /* Top, sides, and bottom padding */
+  width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+main article.Story {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  margin-top: 120px;
+  margin-bottom: 2em;
+  width: 100%;
+  background-color: #c08507;
+  padding: 1.5em;
+  border-radius: 8px;
+  color: #fff;
+}
+
+main article.Story .text {
+  width: 33.33%;
+  text-align: left;
+  padding: 1em;
+  border-radius: 8px;
+  color: #fff;
+}
+
+main article.Story .text h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+main article.Story .text p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main article.Story .cycle-slideshow {
+  flex: 2; 
+  display: flex; 
+  justify-content: center;
+  width: 100%;
+  overflow: hidden; 
+}
+
+main article.Story .cycle-slideshow img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+  object-fit: cover; 
+  max-width: 100%; 
+}
+
+/* Features Grid for Coffee, Pastries, Specialty */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  width: 80%;
+  margin: 2em auto;
+}
+
+/* Common Styles for Coffee, Pastries, Specialty */
+.features-grid article.Coffee,
+.features-grid article.Pastries,
+.features-grid article.Specialty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c08507;
+  color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.features-grid .imageGroup {
+  width: 100%;
+}
+
+.features-grid .imageGroup img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.features-grid .text {
+  width: 100%;
+  padding: 1em;
+}
+
+.features-grid .text h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.features-grid .text p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Vibe at the Bottom */
+main article.Vibe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+  background-color: #c08507;
+  padding: 1.5em;
+  border-radius: 8px;
+  color: #fff;
+  width: 100%;
+  margin-top: 2em;
+}
+
+main article.Vibe .text {
+  width: 33.33%;
+  text-align: left;
+  padding: 1em;
+  border-radius: 8px;
+  color: #fff;
+}
+
+main article.Vibe .text h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+main article.Vibe .text p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main article.Vibe .cycle-slideshow {
+  flex: 2; 
+  display: flex; 
+  justify-content: center;
+  width: 100%;
+  overflow: hidden; 
+}
+
+main article.Vibe .cycle-slideshow img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+  object-fit: cover; 
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  color: #fff;
+  background: #ca7403;
+  padding: 3px;
+  text-align: center;
+}
+
+/* MEDIA QUERY FOR TABLET */
+@media (max-width: 1024px) {
+  /* Reduce features grid from 3 columns to 2 columns on tablet */
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%; /* Slightly more width for comfortable viewing */
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE */
+@media (max-width: 768px) {
+  /* Hide original nav links and social media on mobile if needed */
+  nav ul,
+  nav .social-media {
+    display: none;
+  }
+
+  /* Show burger icon if implementing mobile menu */
+  nav::after {
+    content: "≡";
+    font-size: 1.5em;
+    color: #000;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  /* Stack all sections vertically, full width on mobile */
+  main article.Story {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    width: 100%;
+  }
+
+  main article.Story .text,
+  main article.Story .cycle-slideshow {
+    width: 100%;
+    text-align: center;
+  }
+
+  .features-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1em 0;
+    gap: 1em;
+  }
+
+  .features-grid article.Coffee,
+  .features-grid article.Pastries,
+  .features-grid article.Specialty {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .features-grid .imageGroup,
+  .features-grid .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  main article.Vibe {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    margin-top: 2em;
+    padding: 1.5em;
+  }
+
+  main article.Vibe .text,
+  main article.Vibe .cycle-slideshow {
+    width: 100%;
+    text-align: center;
+  }
+
+  main article.Vibe .text {
+    padding: 1em;
+  }
+}

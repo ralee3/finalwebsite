@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4E9DA;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 7%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #F4E9DA;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  border-bottom: none;
+}
+
+nav img {
+  width: 20%;
+  margin: 10px 0;
+  margin-right: 2em;
+}
+
+nav ul {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  gap: 2em;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a.active {
+  color: #c08507;
+}
+
+nav .social-media {
+  display: flex;
+  gap: 0.5em;
+  margin-left: 5em;
+}
+
+nav .social-media a img {
+  width: 24px;
+  height: 24px;
+}
+
+.main-container {
+  margin-top: 100px; 
+  padding: 1em 2em;
+  width: 100%;
+  background-color: #c08507; /* Match the background of the about section */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Coffee-is-life Section */
+.coffee-is-life {
+  display: flex;
+  align-items: flex-start; /* Align top edges of columns */
+  max-width: 1200px;
+  margin: 120px auto .5em; 
+  padding: 2em;
+  background: #c08507; /* Same as main container */
+  color: #000;
+  /* No box-shadow or border lines */
+  border: none;
+}
+
+/* Title column on the left */
+.coffee-is-life .title-column {
+  flex: 0 0 auto;    /* Fixed width column */
+  width: 200px;       /* Adjust width as needed */
+  text-align: left;
+}
+
+.coffee-is-life .title-column h1 {
+  font-size: 2.5em;   /* Slightly smaller so it fits on one line */
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: #000;
+  font-weight: 800;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Text column on the right, moved further right with margin-left */
+.coffee-is-life .text-column {
+  flex: 1;         /* Flexible space for text */
+  margin-left: 15em; /* Move the text column further to the right */
+  text-align: left;
+}
+
+.coffee-is-life .text-column h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #000;
+  font-weight: 700;
+}
+
+.coffee-is-life .text-column p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  color: #000;
+  margin-bottom: 1.5em;
+}
+
+/* Footer */
+footer {
+  margin-top: 5em;
+  color: #fff;
+  background: #ca7403;
+  padding: 3px;
+  text-align: center;
+}
+
+/* Tablet Adjustments */
+@media (max-width: 1024px) {
+  .coffee-is-life {
+    padding: 2em 1em;
+  }
+
+  .coffee-is-life .title-column h1 {
+    font-size: 2.2em; /* Slightly adjust if needed */
+  }
+
+  .coffee-is-life .text-column h2 {
+    font-size: 1.8em;
+  }
+
+  .coffee-is-life .text-column p {
+    font-size: 1.1em;
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .coffee-is-life {
+    flex-direction: column; 
+    text-align: center;
+    margin: 100px auto 2em; /* Adjust top margin if needed */
+  }
+
+  .title-column,
+  .text-column {
+    max-width: 100%;
+    text-align: center;
+    margin: 0; /* Remove extra margin since we're stacking */
+  }
+
+  .coffee-is-life .title-column h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .coffee-is-life .text-column h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .coffee-is-life .text-column p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+}
+
+
+
+
